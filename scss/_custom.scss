@@ -1,0 +1,68 @@
+.response p {
+    margin-top: 0;
+}
+
+.opblock-tag {
+    margin: 0 0 10px 0;
+
+    @include text_headline($iagto-title-color);
+}
+
+@mixin colorit($color) {
+    border-color: $color;
+    background: rgba($color, 0.3);
+
+    .opblock-summary-method {
+        background: $color;
+    }
+
+    .opblock-summary {
+        border-color: $color;
+    }
+
+    .tab-header .tab-item.active h4 span:after {
+        background: $color;
+    }
+}
+
+.opblock {
+    &.opblock-post {
+        @include colorit($_color-post);
+    }
+
+    &.opblock-put {
+        @include colorit($_color-put);
+    }
+
+    &.opblock-delete {
+        @include colorit($_color-delete);
+    }
+
+    &.opblock-get {
+        @include colorit($_color-get);
+    }
+
+    &.opblock-patch {
+        @include colorit($_color-patch);
+    }
+
+    &.opblock-head {
+        @include colorit($_color-head);
+    }
+
+    &.opblock-options {
+        @include colorit($_color-options);
+    }
+
+    &.opblock-deprecated {
+        opacity: .6;
+
+        @include colorit($_color-disabled);
+    }
+}
+
+.info {
+    .title {
+        @include text_body($iagto-title-color);
+    }
+}
