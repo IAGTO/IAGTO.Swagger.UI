@@ -1,0 +1,21 @@
+$_color-post: #29b556 !default;
+$_color-get: #007cc3 !default;
+$_color-put: #fca130 !default;
+$_color-delete: #f93e3e !default;
+$_color-head: #9012fe !default;
+$_color-patch: #50e3c2 !default;
+$_color-disabled: #ebebeb !default;
+$_color-options: #0d5aa7 !default;
+
+// Topbar
+
+$color-primary: #213452;
+$topbar-background-color: $color-primary;
+$iagto-title-color: #069;
+$iagto-tag-background-color: #1172b3;
+$topbar-download-url-wrapper-element-border-color: $iagto-title-color;
+
+
+$btn-authorize-border-color: $iagto-title-color;
+$btn-authorize-font-color: $iagto-title-color;
+$btn-authorize-svg-fill-color: $iagto-title-color;
